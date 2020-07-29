@@ -8,6 +8,7 @@ import com.elaine.testpattern.R;
 
 /**
  * @author elaine
+ * //TODO 待研究
  */
 public class AbstractFactoryActivity extends AppCompatActivity {
 

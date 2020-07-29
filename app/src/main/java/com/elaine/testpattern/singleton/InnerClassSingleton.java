@@ -5,6 +5,8 @@ package com.elaine.testpattern.singleton;
  * @date 2020/7/27
  * <p>
  * 静态内部类
+ * 1).本质上是利用类的加载机制来保证线程安全
+ * 2).只有在实际使用的时候，才会触发类的初始化，所以也是懒加载的一 种形式。
  */
 public class InnerClassSingleton {
     private static class InnerClassHolder {

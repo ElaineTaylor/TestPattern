@@ -19,13 +19,9 @@ public class FactoryActivity extends AppCompatActivity {
     }
 
     private void use() {
-        ShapeFactory shapeFactory = new ShapeFactory();
-        Shape shapeOne = shapeFactory.getShape("CIRCLE");
-        shapeOne.draw();
-        Shape shapeTwo = shapeFactory.getShape("RECTANGLE");
-        shapeTwo.draw();
-        Shape shapeThree = shapeFactory.getShape("SQUARE");
-        shapeThree.draw();
+        Factory bmwFactory = new BMWFactory();
+        System.out.println(bmwFactory.getCar().getName());
+        Factory benzFactory = new BenzFactory();
+        System.out.println(benzFactory.getCar().getName());
     }
-
 }

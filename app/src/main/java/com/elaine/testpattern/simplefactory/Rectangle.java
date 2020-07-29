@@ -1,4 +1,4 @@
-package com.elaine.testpattern.factory;
+package com.elaine.testpattern.simplefactory;
 
 /**
  * @author elaine
