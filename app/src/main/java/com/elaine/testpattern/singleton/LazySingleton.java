@@ -12,9 +12,13 @@ package com.elaine.testpattern.singleton;
 public class LazySingleton {
     private volatile static LazySingleton instance;
 
+    //构建方法
     public LazySingleton() {
     }
 
+    //1.判断instance是否为空
+    //2.synchronized加锁
+    //3.若instance为空，则创建对象
     public static LazySingleton getInstance() {
         if (instance == null) {
             synchronized (LazySingleton.class) {
@@ -26,6 +30,7 @@ public class LazySingleton {
         return instance;
     }
 
+    //对外方法，用于测试，功能是打印数据
     public void showMessage() {
         System.out.println("Hello LazySingleton!");
     }

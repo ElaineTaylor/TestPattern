@@ -1,6 +1,10 @@
 package com.elaine.testpattern.simplefactory;
 
 /**
+ * 形状工厂
+ *
+ * 根据传入的关键字，对比进行创建对象。
+ *
  * @author elaine
  */
 public class ShapeFactory {

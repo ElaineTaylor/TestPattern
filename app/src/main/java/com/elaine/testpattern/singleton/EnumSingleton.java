@@ -11,7 +11,8 @@ package com.elaine.testpattern.singleton;
 public enum EnumSingleton {
     INSTANCE;
 
+    //对外方法，用于测试，功能是打印数据
     public void showMessage() {
-        System.out.println("Hello world!");
+        System.out.println("Hello EnumSingleton!");
     }
 }

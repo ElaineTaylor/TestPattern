@@ -7,6 +7,8 @@ import android.os.Bundle;
 import com.elaine.testpattern.R;
 
 /**
+ * 简单工厂模式实现类
+ *
  * @author elaine
  */
 public class SimpleFactoryActivity extends AppCompatActivity {

@@ -1,6 +1,8 @@
 package com.elaine.testpattern.simplefactory;
 
 /**
+ * 圆形
+ *
  * @author elaine
  */
 public class Circle implements Shape {
