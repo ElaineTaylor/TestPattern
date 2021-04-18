@@ -1,6 +1,8 @@
 package com.elaine.testpattern.abstractfactory;
 
 /**
+ * 长方形
+ *
  * @author elaine
  * @date 2020/7/27
  */
