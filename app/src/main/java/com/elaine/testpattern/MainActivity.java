@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.elaine.testpattern.abstractfactory.AbstractFactoryActivity;
 import com.elaine.testpattern.builder.BuilderActivity;
 import com.elaine.testpattern.factory.FactoryActivity;
+import com.elaine.testpattern.observer.ObserverActivity;
 import com.elaine.testpattern.simplefactory.SimpleFactoryActivity;
 import com.elaine.testpattern.singleton.SingletonActivity;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnSingleton;
     private Button mBtnBuilder;
     private Button mBtnSimpleFactory;
+    private Button mBtnObserverFactory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnSingleton = findViewById(R.id.btn_singleton);
         mBtnBuilder = findViewById(R.id.btn_builder);
         mBtnSimpleFactory = findViewById(R.id.btn_simple_factory);
+        mBtnObserverFactory = findViewById(R.id.btn_observer);
     }
 
     private void initListener() {
@@ -69,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, BuilderActivity.class));
+            }
+        });
+        mBtnObserverFactory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ObserverActivity.class));
             }
         });
     }
