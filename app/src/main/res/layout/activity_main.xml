@@ -49,4 +49,10 @@
         android:text="观察者模式（Observer Pattern）"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_strategy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="策略模式（strategy Pattern）"
+        android:textAllCaps="false" />
 </LinearLayout>
