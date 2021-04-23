@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.elaine.testpattern.abstractfactory.AbstractFactoryActivity;
 import com.elaine.testpattern.builder.BuilderActivity;
+import com.elaine.testpattern.decorator.DecoratorActivity;
 import com.elaine.testpattern.factory.FactoryActivity;
 import com.elaine.testpattern.observer.ObserverActivity;
 import com.elaine.testpattern.simplefactory.SimpleFactoryActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnSimpleFactory;
     private Button mBtnObserver;
     private Button mBtnStrategy;
+    private Button mBtnDecorator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnSimpleFactory = findViewById(R.id.btn_simple_factory);
         mBtnObserver = findViewById(R.id.btn_observer);
         mBtnStrategy = findViewById(R.id.btn_strategy);
+        mBtnDecorator = findViewById(R.id.btn_decorator);
     }
 
     private void initListener() {
@@ -87,6 +90,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, StrategyActivity.class));
+            }
+        });
+        mBtnDecorator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DecoratorActivity.class));
             }
         });
     }
