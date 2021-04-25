@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.elaine.testpattern.abstractfactory.AbstractFactoryActivity;
+import com.elaine.testpattern.adapter.AdapterActivity;
 import com.elaine.testpattern.builder.BuilderActivity;
 import com.elaine.testpattern.decorator.DecoratorActivity;
 import com.elaine.testpattern.factory.FactoryActivity;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnObserver;
     private Button mBtnStrategy;
     private Button mBtnDecorator;
+    private Button mBtnAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnObserver = findViewById(R.id.btn_observer);
         mBtnStrategy = findViewById(R.id.btn_strategy);
         mBtnDecorator = findViewById(R.id.btn_decorator);
+        mBtnAdapter = findViewById(R.id.btn_adapter);
     }
 
     private void initListener() {
@@ -96,6 +99,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DecoratorActivity.class));
+            }
+        });
+        mBtnAdapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AdapterActivity.class));
             }
         });
     }

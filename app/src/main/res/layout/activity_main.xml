@@ -62,4 +62,11 @@
         android:layout_height="wrap_content"
         android:text="装饰器模式（decorator Pattern）"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="适配器模式（adapter Pattern）"
+        android:textAllCaps="false" />
 </LinearLayout>
