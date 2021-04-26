@@ -12,6 +12,7 @@ import com.elaine.testpattern.adapter.AdapterActivity;
 import com.elaine.testpattern.builder.BuilderActivity;
 import com.elaine.testpattern.decorator.DecoratorActivity;
 import com.elaine.testpattern.factory.FactoryActivity;
+import com.elaine.testpattern.flyweight.FlyweightActivity;
 import com.elaine.testpattern.observer.ObserverActivity;
 import com.elaine.testpattern.simplefactory.SimpleFactoryActivity;
 import com.elaine.testpattern.singleton.SingletonActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnStrategy;
     private Button mBtnDecorator;
     private Button mBtnAdapter;
+    private Button mBtnFlyweight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnStrategy = findViewById(R.id.btn_strategy);
         mBtnDecorator = findViewById(R.id.btn_decorator);
         mBtnAdapter = findViewById(R.id.btn_adapter);
+        mBtnFlyweight=findViewById(R.id.btn_flyweight);
     }
 
     private void initListener() {
@@ -105,6 +108,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AdapterActivity.class));
+            }
+        });
+        mBtnFlyweight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FlyweightActivity.class));
             }
         });
     }
