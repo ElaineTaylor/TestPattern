@@ -11,6 +11,7 @@ import com.elaine.testpattern.abstractfactory.AbstractFactoryActivity;
 import com.elaine.testpattern.adapter.AdapterActivity;
 import com.elaine.testpattern.builder.BuilderActivity;
 import com.elaine.testpattern.decorator.DecoratorActivity;
+import com.elaine.testpattern.facade.FacadeActivity;
 import com.elaine.testpattern.factory.FactoryActivity;
 import com.elaine.testpattern.flyweight.FlyweightActivity;
 import com.elaine.testpattern.observer.ObserverActivity;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnDecorator;
     private Button mBtnAdapter;
     private Button mBtnFlyweight;
+    private Button mBtnFacade;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnStrategy = findViewById(R.id.btn_strategy);
         mBtnDecorator = findViewById(R.id.btn_decorator);
         mBtnAdapter = findViewById(R.id.btn_adapter);
-        mBtnFlyweight=findViewById(R.id.btn_flyweight);
+        mBtnFlyweight = findViewById(R.id.btn_flyweight);
+        mBtnFacade = findViewById(R.id.btn_facade);
     }
 
     private void initListener() {
@@ -114,6 +117,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, FlyweightActivity.class));
+            }
+        });
+        mBtnFacade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FacadeActivity.class));
             }
         });
     }

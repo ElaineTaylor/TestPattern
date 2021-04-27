@@ -76,4 +76,11 @@
         android:layout_height="wrap_content"
         android:text="享元模式（flyweight Pattern）"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_facade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外观（门面）模式（Facade Pattern）"
+        android:textAllCaps="false" />
 </LinearLayout>

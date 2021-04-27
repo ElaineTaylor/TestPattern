@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".facade.FacadeActivity"></activity>
         <activity android:name=".flyweight.FlyweightActivity" />
         <activity android:name=".adapter.AdapterActivity" />
         <activity android:name=".decorator.DecoratorActivity" />
