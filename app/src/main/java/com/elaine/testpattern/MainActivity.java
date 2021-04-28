@@ -18,6 +18,7 @@ import com.elaine.testpattern.observer.ObserverActivity;
 import com.elaine.testpattern.simplefactory.SimpleFactoryActivity;
 import com.elaine.testpattern.singleton.SingletonActivity;
 import com.elaine.testpattern.strategy.StrategyActivity;
+import com.elaine.testpattern.template.TemplateActivity;
 
 /**
  * @author elaine
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnAdapter;
     private Button mBtnFlyweight;
     private Button mBtnFacade;
+    private Button mBtnTemplate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnAdapter = findViewById(R.id.btn_adapter);
         mBtnFlyweight = findViewById(R.id.btn_flyweight);
         mBtnFacade = findViewById(R.id.btn_facade);
+        mBtnTemplate = findViewById(R.id.btn_template);
     }
 
     private void initListener() {
@@ -123,6 +126,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, FacadeActivity.class));
+            }
+        });
+        mBtnTemplate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TemplateActivity.class));
             }
         });
     }
