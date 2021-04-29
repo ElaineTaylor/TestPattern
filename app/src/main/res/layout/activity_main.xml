@@ -90,4 +90,11 @@
         android:layout_height="wrap_content"
         android:text="模版模式（Template Pattern）"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_chain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="责任链模式（Chain Pattern）"
+        android:textAllCaps="false" />
 </LinearLayout>

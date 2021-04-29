@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.elaine.testpattern.abstractfactory.AbstractFactoryActivity;
 import com.elaine.testpattern.adapter.AdapterActivity;
 import com.elaine.testpattern.builder.BuilderActivity;
+import com.elaine.testpattern.chain.ChainActivity;
 import com.elaine.testpattern.decorator.DecoratorActivity;
 import com.elaine.testpattern.facade.FacadeActivity;
 import com.elaine.testpattern.factory.FactoryActivity;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnFlyweight;
     private Button mBtnFacade;
     private Button mBtnTemplate;
+    private Button mBtnChain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnFlyweight = findViewById(R.id.btn_flyweight);
         mBtnFacade = findViewById(R.id.btn_facade);
         mBtnTemplate = findViewById(R.id.btn_template);
+        mBtnChain = findViewById(R.id.btn_chain);
     }
 
     private void initListener() {
@@ -132,6 +135,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TemplateActivity.class));
+            }
+        });
+        mBtnChain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ChainActivity.class));
             }
         });
     }
