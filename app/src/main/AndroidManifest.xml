@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chain.ChainActivity"></activity>
+        <activity android:name=".prototype.PrototypeActivity"></activity>
+        <activity android:name=".chain.ChainActivity" />
         <activity android:name=".template.TemplateActivity" />
         <activity android:name=".facade.FacadeActivity" />
         <activity android:name=".flyweight.FlyweightActivity" />

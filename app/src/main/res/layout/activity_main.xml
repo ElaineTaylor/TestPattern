@@ -97,4 +97,11 @@
         android:layout_height="wrap_content"
         android:text="责任链模式（Chain Pattern）"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_prototype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原型模式（Prototype Pattern）"
+        android:textAllCaps="false" />
 </LinearLayout>
